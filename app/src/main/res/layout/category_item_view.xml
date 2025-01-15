@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvMenuCategory"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivCategoryImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+
+            android:layout_above="@+id/tvCategoryName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="17dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ramen" />
+
+        <TextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="#FDEFD2"
+            android:fontFamily="@font/robotobold"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="3dp"
+            android:text="STARTERS"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

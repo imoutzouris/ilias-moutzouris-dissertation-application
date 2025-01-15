@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#FDEFD2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miso Ramen"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#333333"
+            android:fontFamily="@font/robotobold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvItemDescription"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="A chicken based broth flavored with Japanese fermented soybean paste.
+            Served with chashu (pork belly), ajitsuke egg, enoki, kikurage, scallion,nori, bok choy,
+            and menma"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="#6C6868"
+            android:textStyle="bold"
+            android:fontFamily="@font/robotolight"
+            app:layout_constraintEnd_toStartOf="@+id/ivItemImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemName" />
+
+        <TextView
+            android:id="@+id/tvItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="8.00$"
+            android:textSize="13dp"
+            android:textColor="#333333"
+            android:fontFamily="@font/robotobold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemDescription"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/ivItemImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ramen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
