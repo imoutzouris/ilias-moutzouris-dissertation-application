@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Iliasdissertation" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">#FDBD8E</item>
+    </style>
+
+    <style name="Theme.Iliasdissertation" parent="Base.Theme.Iliasdissertation" />
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+
+    <style name="AlertDialogShape" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/alert_dialog_background_shape</item>
+        <item name="android:windowMinWidthMajor">80%</item> <!-- Adjust the width as needed -->
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+    </style>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="footer_navbar_selected_icon">#FF000000</color>
+    <color name="footer_navbar_unselected_icon">#FFFFFF</color>
+
+    <color name="footer_navbar_selected_text">#FF000000</color>
+    <color name="footer_navbar_unselected_text">#FFFFFF</color>
+</resources>
